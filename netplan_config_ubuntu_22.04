@@ -1,13 +1,13 @@
 # Example file config network with netplan
 network:
   version: 2
-  renderer: networkd
+  renderer: networkd            # Se utiliza el servicio networkd de Systemd
   ethernets:
-    eth0:
+    eth0:                       # Nombre interfaz de red
       addresses:
-        - 192.168.1.100/24
+        - 192.168.1.100/24      # Dirección IP
       nameservers:
-        addresses: [8.8.8.8]
-      routes:
+        addresses: [8.8.8.8]    # Dirección DNS
+      routes:                   # Routes to default indica la ruta por defecto de salida para los paquetes
         - to: default
-          via: 192.168.1.1
+          via: 192.168.1.1      
