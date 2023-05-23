@@ -8,3 +8,11 @@ Purge package and dependences
 ``
 sudo apt-get --purge remove nom_package
 ``
+
+Configure git en Ubuntu 22.04  
+``
+$ git config --global user.name "nombre_user_github"  
+``  
+``
+$ git config --global user-email "email_user_github"
+``
